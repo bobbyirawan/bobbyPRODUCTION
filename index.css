@@ -1,0 +1,361 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html {
+    scroll-behavior: smooth;
+}
+/* scroll bar start */
+::-webkit-scrollbar {
+    width: 8px;
+  }
+::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px grey; 
+    border-radius: 10px;
+  }
+::-webkit-scrollbar-thumb {
+    background: yellow; 
+    border-radius: 10px;
+  }
+::-webkit-scrollbar-thumb:hover {
+    background: #b30000; 
+  }
+/* scrollbar end */
+
+
+body {
+    font-family: 'viga', 'sans-serif' ;
+    background-color: #e6e6e6;
+}
+.clear {
+    clear: right;
+}
+ul {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+}
+nav {
+    width: 100%;
+    padding: 10px 80px;
+    position: absolute;
+    z-index: 10;
+    padding-top: 40px;
+    
+}
+.logo {
+    display: inline-block;
+    font-size: 50px;
+    font-style: italic;
+    color: whitesmoke;  
+    font-family: 'Passion One', cursive;
+}
+.logo span {
+    color: red;
+    font-size: 42px;
+}
+nav ul {
+    float: right;
+}
+nav .btn  {
+    display: inline-block;
+    margin-left: 40px;
+    font-size: 25px;    
+    line-height: 2;
+    color: whitesmoke;
+}
+nav a {
+    color: whitesmoke;
+}
+nav .btn:hover {
+    border-bottom: 6px solid yellowgreen;
+}
+nav a:hover {
+    color: green;
+}
+nav .sidebar{
+    display: none;
+    color: whitesmoke;
+    font-size: 30px;
+    float: right;
+    margin-top: 1.5vh;
+}
+/* navbar End */
+
+/* sidebar start */
+.sidebarLeft {
+    position: absolute;
+    z-index: 25;
+    background-color: black;
+    width: 50vw;
+    height: 100vh;
+    color: whitesmoke;
+    display: flex;
+}
+.closed  h1 {
+    line-height: 2;    
+}
+.closed {
+    flex-grow: 1;
+    padding-top: 5px;
+    display: flex;
+    justify-content: center;
+}
+.btn-sidebarLeft {
+    flex-grow: 3;
+}
+.sidebarLeft ul li {
+    line-height: 2;
+    padding: 20px;
+}
+.sidebarLeft ul li:hover {
+    background-color: white;
+}
+.sidebarLeft a {
+    display: block;
+    color: whitesmoke;
+}
+.sidebarLeft a:hover {
+    background-color: white;
+    color: green;
+}
+/* sidebar End */
+
+/* main start */
+main {
+    width: 100%;
+    height: 100vh;
+    background-image: url(img/1.jpg);
+    font-family: 'Dancing Script';
+    border-bottom: 2px solid grey;
+}
+.header-shadow {
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    z-index: 5;
+    background-color: black;
+    opacity: 0.4;
+}
+.header {
+    width: 100%;
+    text-align: center;
+    color:whitesmoke;
+    position: absolute;
+    z-index: 7;
+    top: 27vh;  
+}
+.header .tag h1 {
+    font-size: 120px;
+    text-shadow: 2px 5px 50px yellow;
+}
+.tag .tag-1 {
+    line-height: 0.5;
+}
+.header p {
+    font-size: 24px;
+}
+.log {
+    margin-top: 50px;
+    font-family: viga;
+}
+.log .btn  {
+    padding: 12px 100px;
+    font-size: 25px;
+    border-radius: 5px;
+    color: whitesmoke;
+    margin: 10px 15px;
+}
+.log .sign-in {
+    background-color: green;
+}
+.card-sign-in {
+    background-color: black;
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    z-index: 11;
+    opacity: 0.5;
+}
+.close {
+    color: whitesmoke;
+    position: absolute;
+    top: 0;
+    right: 50;
+    z-index: 11;
+}
+.sign-in-layout{
+    width: 50%;
+    margin: auto;
+    border: 1px solid yellow;
+}
+.sign-in-layout input {
+    width: 100%;
+    height: 50px;
+}
+.log .sign-up {
+    background-color: red;
+}
+/* main end */
+
+/* content start */
+.content {
+    padding: 0 80px;
+    padding-top: 60px;
+    text-align: justify;
+}
+.content a {
+    color: #404040;
+}
+.content .judul-content {
+    font-size: 100px;
+    font-family: "passion one", cursive;
+    color: yellow;
+    text-shadow: 10px 10px blue;
+    text-transform: uppercase;
+    font-style: italic;
+    margin-bottom: 30px;
+}
+.card {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 50px;
+    padding: 30px;
+    border-radius: 15px;
+    background-color: white;
+}
+.content-write {
+    margin-right: 30px;
+    width: 100%;
+}
+.card-content {
+    box-shadow: 2px 3px 10px black;
+    border-radius: 15px;
+    width: 28%;
+    padding: 20px 10px;
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #e6e6ff; 
+    align-items: center; 
+    justify-content: center;
+}
+.card-content i {
+    font-size: 200px;
+    color: #808080;
+}
+.tech span {
+    background-color: green;
+    color: whitesmoke;
+    padding: 1px 7px;
+    border-radius: 5px;
+    line-height: 2;
+}
+
+/* content End */
+
+/* footer start */
+footer {
+    width: 100%;
+    height: 250px;
+    background-color: #00001a;
+    padding: 30px 80px;
+    color: whitesmoke;
+    margin-top: 100px;
+}
+footer .container {
+    display: flex;
+    justify-content: space-between;
+}
+.footer-item {
+    text-transform: uppercase;
+    font-size: 20px;
+    font-family: 'Passion One', cursive;
+}
+
+.footer-item ul li {
+    line-height: 2;
+}
+
+
+@media(max-width: 1000px) {
+    .header .tag h1 {
+        font-size: 100px;
+    }
+    .card-content {
+        width: 50%;
+    }
+}
+@media (max-width: 770px) {
+    nav ul {
+        display: none;
+    }
+    nav .sidebar {
+        display: block;
+        color: whitesmoke;
+        font-size: 30px;
+    }
+    .header .tag h1 {
+        font-size: 80px;
+    }
+}
+@media (max-width: 650px) {
+    nav {
+        padding: 20px 30px
+    }
+    .header .tag h1 {
+        font-size:  60px;
+    }
+    .log a {
+        display: block;
+    }
+    .card-content i {
+        font-size: 90px;
+    }
+    .content .judul-content {
+        margin-top: 12px;
+        font-size: 4em;
+    }
+}
+@media (max-width: 450px) {
+    /* main start */
+    .header .tag h1 {
+        font-size: 40px;
+    }
+    .header .tag p {
+        font-size: 15px;
+    }
+    .log .btn  {
+        padding: 1px 10px;
+        font-size: 1.5em;
+        border-radius: 5px;
+        color: whitesmoke;
+        margin: 10px 15px;
+    }
+    /* main End */
+
+    .content {
+        padding: 0 0;
+    }
+    .card {
+        padding: 0;
+        display: block;
+    }
+    .content-write {
+        display: none;
+    }
+    .card-content {
+        width: 100%;
+        padding-top: 10px;
+        padding-left: 20px;
+    }
+    .card-content i {
+        font-size: 15rem;
+    }
+    footer {
+        padding: 0;
+    }
+}
